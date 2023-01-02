@@ -1,0 +1,47 @@
+.home-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-details {
+  padding: 0.8rem;
+  width: 60%;
+}
+.content-details > p {
+  color: rgb(139, 138, 138);
+  font-weight: 400;
+  font-size: clamp(0.5rem, -0.875rem + 7.333vw, 1.2rem);
+}
+.content-details > div > button {
+  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(78, 139, 155);
+  color: white;
+}
+
+.img-side {
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(116, 113, 113);
+  color: white;
+  text-align: center;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home-page {
+    display: flex;
+    align-items: flex-start;
+  }
+  .content-details > p {
+    font-size: calc(15px+0.390625vw);
+  }
+}
